@@ -100,8 +100,8 @@ app.post('/sendmail', function (req, res) {
         return res.end();
     })
 })
-
-app.listen(3001, function () {
+let port = process.env.PORT
+app.listen(port, function () {
     console.log('Listen for port 3001!node')
     // console.log("Message sent: %s", info.messageId);
     // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
